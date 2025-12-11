@@ -82,7 +82,7 @@ def start_gui():
     bottom_buttons = ttk.Frame(buttons_frame)
     bottom_buttons.pack(side=tk.TOP, fill=tk.X, pady=2)
 
-    # Funkcja do wgrania obrazu i wyświetlenia (bez uruchamiania modelu)
+    # Funkcja do wgrania obrazu i wyświetlenia
     def upload_image():
         path = filedialog.askopenfilename(
             title="Wybierz zdjęcie",
@@ -137,7 +137,6 @@ def start_gui():
 
         # Jeśli load_model zwrócił obraz, użyj go, w przeciwnym razie pozostaw oryginalny
         if isinstance(img_arr, (list, tuple)):
-            # defensywnie: jeśli load zwrócił (img_array, pedicle_points) w kolejności odwrotnej
             pass
         current["img_array"] = img_arr
         current["pedicle_points"] = ped_points or []
@@ -191,7 +190,7 @@ def start_gui():
     for b in [add_green_btn, add_red_btn, remove_btn, move_btn, select_btn]:
         b.pack(side=tk.LEFT, padx=5)
 
-    # Początkowe rysowanie — jeśli nie ma obrazu, narysuje puste tło
+    # Początkowe rysowanie — jeśli nie ma obrazu puste tło
     if current["original_img"] is None:
         # stwórz pusty obraz placeholder
         placeholder = Image.new("RGB", (800, 600), (20, 20, 20))
