@@ -10,7 +10,7 @@ Projekt powstał jako część mojej **pracy inżynierskiej**.
 ### Funkcjonalności
 
 - Wgrywanie zdjęć **RTG**
-- Automatyczne wykrywanie kręgosłupa (AI – **Ultralytics YOLO**)
+- Automatyczne wykrywanie kręgosłupa (AI - **Ultralytics YOLO**)
 - Obliczanie **kąta Cobba**
 - Ręczne zaznaczanie linii pomiarowych
 - Wizualizacja przetworzonych obrazów
