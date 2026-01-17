@@ -74,3 +74,8 @@ def redraw(canvas, original_img, zoom, offset_x, offset_y, pedicle_points,
     selected_lines[:] = matched_selected
 
     return tk_img, bg_img_id
+
+
+2 scenariusze testowe
+przypadki uzycia
+yolo opisac

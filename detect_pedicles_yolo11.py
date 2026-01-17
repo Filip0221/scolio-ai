@@ -16,3 +16,4 @@ results = model.train(
     augment=True,          # rotacje, flip, jasność, zoom
     name="pedicle_yolo11_retrain"
 )
+yolo biblioteki zbior danych podzial danych augumentacja danych
